@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>960</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>960</width>
+    <height>640</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>你帮我助</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="iamges.qrc">
+    <normaloff>:/icon.jpg</normaloff>:/icon.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QStackedWidget#stackedWidget
+{border-image: url(:/bk.jpg);}
+QStackedWidget#stackedWidget QPushButton
+{
+	border:none;
+	border-radius:5px;
+	background-color: rgb(255, 97, 205);
+	color:white;
+}
+QStackedWidget#stackedWidget QPushButton:hover
+{background-color: rgb(255, 133, 239);}
+QLabel{color: rgb(255, 255, 255);}
+QLineEdit{border-radius:6px;}
+</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>640</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>960</width>
+     <height>640</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>960</width>
+     <height>640</height>
+    </size>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="menuPage">
+    <widget class="QPushButton" name="SearchBtn">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>370</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>查看物品信息</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ExitBtn">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>430</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>退出系统</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Logo">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>100</y>
+       <width>521</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>你帮我助物品交换系统</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="UserPage">
+    <widget class="QPushButton" name="backBtn">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>10</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>返回</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>110</y>
+       <width>861</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderMinimumSectionSize">
+      <number>50</number>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>130</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderCascadingSectionResizes">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>31</number>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+    </widget>
+    <widget class="QPushButton" name="addBtn">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>70</y>
+       <width>81</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>添加</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delBtn">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>70</y>
+       <width>81</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>删除</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="SearchBtn_2">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>70</y>
+       <width>81</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>搜索</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ExitBtn_2">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>10</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>退出</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>70</y>
+       <width>351</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>请输入物品名称</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="changeBtn">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>68</y>
+       <width>81</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>修改</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refreshBtn">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>70</y>
+       <width>81</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>刷新</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>720</x>
+       <y>610</y>
+       <width>191</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="iamges.qrc"/>
+ </resources>
+ <connections/>
+</ui>
