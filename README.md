@@ -6,3 +6,4 @@
 .h   是主窗口类的头文件
 .cpp 是主窗口类的实现文件
 .ui  是主窗口的界面文件
+Qt creator下载地址：https://www.qt.io/download-qt-installer?hsCtaTracking=99d9dd4f-5681-48d2-b096-470725510d34%7C074ddad0-fdef-4e53-8aa8-5e8a876d6ab4
